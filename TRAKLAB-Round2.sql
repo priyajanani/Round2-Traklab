@@ -1,0 +1,15 @@
+create database employee_department_system;
+use employee_department_system;
+create table employees(id int,employee_name varchar(50),age int,department_name varchar(50));
+create table department(id int,department_name varchar(50) );
+insert into employees(id,employee_name,age,department_name)values(01,'priya',25,'UI'),(02,'mohana',29,'WEB'),(03,'mahesh',23,'APP');
+insert into department(id,department_name)values(01,'UI'),(02,'WEB'),(03,'APP');
+SELECT * from employees;
+SELECT * from department;
+UPDATE employees SET department_name='AI'WHERE employee_name='priya';
+UPDATE department SET department_name='AI'WHERE id='01';
+SELECT * from employees;
+SELECT * from department;
+DELETE FROM employees WHERE age=25;
+SELECT * from employees;
+SELECT * from department;
